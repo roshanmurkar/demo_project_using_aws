@@ -20,4 +20,4 @@ app.register_blueprint(teacher_subject_rel)
 #app.register_blueprint(details)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=8080,debug=True)
