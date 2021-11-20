@@ -17,7 +17,7 @@ def register():
     output = info_model_schema.dump(info_model)
     for user in output:
         if user['username'] == user_data['username'] and int(user['password']) == int(user_data['password']):
-            return jsonify({"message": "User is already Register", "Data": user_data})
+            return jsonify({"message": "User is already Register ! Thank you", "Data": user_data})
 
     username = user_data['username']
     password = user_data['password']

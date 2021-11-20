@@ -18,7 +18,7 @@ def new_student():
 
         for user in output:
             if str(user['stud_name']) == str(user_data['student_name']):
-                return jsonify({"message": "Student is already present ","data":user_data})
+                return jsonify({"message": "Student is already present !Thank you ","data":user_data})
                 break
         db_query.insert_student_data(user_data['student_name'])
         return jsonify({"message": "new student is added","data":user_data})
